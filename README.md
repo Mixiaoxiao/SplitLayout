@@ -7,7 +7,7 @@ SplitLayout, 安卓分栏布局，包含2个子View，支持横向或纵向分�
 Screenshots 
 -----
 
-![SplitLayout](https://raw.github.com/Mixiaoxiao/SplitLayout/master/Screenshots/SplitLayout.gif) 
+![SplitLayout](https://raw.github.com/Mixiaoxiao/SplitLayout/master/SplitLayout.gif) 
 
 Sample APK
 -----
