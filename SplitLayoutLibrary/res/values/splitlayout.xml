@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SplitLayout">
+        <attr name="splitOrientation" format="enum">
+        	<enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="splitChildMinSize" format="dimension"/>
+        <attr name="splitFraction" format="float"/>
+        <attr name="splitHandleDrawable" format="reference"/>
+        <attr name="splitHandleSize" format="dimension"/>
+        <attr name="splitHandleHapticFeedback" format="boolean"/>
+    </declare-styleable>
+</resources>

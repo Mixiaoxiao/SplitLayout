@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mixiaoxiao.splitlayoutsample.SplitLayoutActivity" >
+
+    <com.mixiaoxiao.library.splitlayout.SplitLayout
+        android:id="@+id/splitlayout_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        app:splitHandleDrawable="@drawable/split_drawable"
+        app:splitOrientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_pink_500"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickChild0"
+            android:text="CHILD 0"
+            android:textColor="#ffff"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_teal_500"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickChild1"
+            android:text="CHILD 1"
+            android:textColor="#ffff"
+            android:textSize="40dp" />
+    </com.mixiaoxiao.library.splitlayout.SplitLayout>
+
+    <com.mixiaoxiao.library.splitlayout.SplitLayout
+        android:id="@+id/splitlayout_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        android:visibility="gone"
+        app:splitOrientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_pink_500"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickChild0"
+            android:text="CHILD 0"
+            android:textColor="#ffff"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_teal_500"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickChild1"
+            android:text="CHILD 1"
+            android:textColor="#ffff"
+            android:textSize="40dp" />
+    </com.mixiaoxiao.library.splitlayout.SplitLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickVerticalSample"
+            android:padding="0dp"
+            android:text="VerticalSample"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickHorizontalSample"
+            android:padding="0dp"
+            android:text="HorizontalSample"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickRotateScreen"
+            android:padding="0dp"
+            android:text="RotateScreen"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</FrameLayout>
