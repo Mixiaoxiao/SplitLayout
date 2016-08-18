@@ -2,7 +2,8 @@ SplitLayout
 ===============
 
 Android SplitLayout, which splits the available space between two child views by dragging the center handle.
-SplitLayout, 安卓分栏布局，包含2个子View，支持横向或纵向分栏，可通过拖动中间的handle来动态分割两个子View所占空间。 
+
+安卓分栏布局，包含2个子View，可通过拖动中间的handle来动态分割两个子View所占空间，支持横向或纵向分栏。 
 
 Screenshots 
 -----
